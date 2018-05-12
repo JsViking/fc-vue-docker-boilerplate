@@ -1,0 +1,19 @@
+version: "3"
+services:
+  backend:
+    environment:
+      - LOCATION_HOST=localhost:3333
+      - LOCATION_MODE=production
+    build:
+      context: ./backend
+      dockerfile: Dockerfile_backend
+    volumes:
+      - "./backend:/src/app"
+    ports:
+      - "3333:3333"
+  nginx:
+    build:
+      context: .
+      dockerfile: dockerfile_nginx
+    ports:
+      - "8080:80"

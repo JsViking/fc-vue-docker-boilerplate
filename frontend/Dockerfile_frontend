@@ -1,0 +1,7 @@
+FROM node:8.9.0
+
+RUN mkdir /frontend
+WORKDIR /frontend
+COPY package.json /frontend
+RUN npm install
+CMD npm run serve
