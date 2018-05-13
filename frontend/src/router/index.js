@@ -11,5 +11,10 @@ export default new Router({
             name: 'HelloWorld',
             component: HelloWorld,
         },
+        //can be redirect on 404
+        {
+            path: '*',
+            redirect: '/'
+        }
     ],
 });
