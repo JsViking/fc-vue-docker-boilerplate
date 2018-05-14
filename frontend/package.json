@@ -10,14 +10,14 @@
   "dependencies": {
     "vue": "^2.5.16",
     "vue-router": "^3.0.1",
-    "warn": "^1.0.1",
-    "less": "3.0.0",
-    "less-loader": "4.1.0"
+    "warn": "^1.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.10",
     "@vue/cli-plugin-eslint": "^3.0.0-beta.10",
     "@vue/cli-service": "^3.0.0-beta.10",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
     "vue-template-compiler": "^2.5.13"
   },
   "babel": {
