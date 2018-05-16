@@ -16,9 +16,6 @@ rm -rf node_modules/
 printf "$yellow" "[2/5] >> install dependencies via npm install"
 printf "$white" "===================================="
 npm install --log-level warn
-npm install vue-router -—save
-npm install less -—save
-npm install less-loader -—save
 
 printf "$yellow" "[3/5] >> build static files, and copy them to dist/ folder"
 printf "$white" "===================================="
