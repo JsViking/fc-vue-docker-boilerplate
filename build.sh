@@ -15,16 +15,16 @@ rm -rf node_modules/
 
 printf "$yellow" "[2/5] >> install dependencies via npm install"
 printf "$white" "===================================="
-npm install --log-level warn
+npm install
 
 printf "$yellow" "[3/5] >> build static files, and copy them to dist/ folder"
 printf "$white" "===================================="
-npm run build --silent
+npm run build
 
 printf "$yellow" "[4/5] >> run docker-compose"
 printf "$white" "===================================="
 cd ..
-docker-compose down && docker-compose -f docker-compose-production.yml build
+docker-compose down --remove-orphans && docker-compose -f docker-compose-production.yml build
 
 printf "$green" "[5/5] >> Starting HTTP Server on port 8080"
 printf "$green" "done: >> Navigate to http://localhost:8080 to see your app running in Docker"
