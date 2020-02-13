@@ -1,8 +1,8 @@
-FROM node:8.9.0
+FROM node:12.16.0
 
 RUN mkdir /frontend
 WORKDIR /frontend
 COPY package.json /frontend
-COPY vue.config.js /frontend
+COPY babel.config.js /frontend
 RUN npm install
 CMD npm run serve
