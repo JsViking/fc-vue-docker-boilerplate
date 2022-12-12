@@ -6,7 +6,7 @@
 		"axios": "^0.19.2",
 		"body-parser": "^1.19.0",
 		"cookie-parser": "1.4.4",
-		"express": "^4.17.1",
+		"express": "^4.17.3",
 		"froncubator-validator-js": "1.0.3",
 		"helmet": "^3.21.2",
 		"mkdirp": "1.0.3",
